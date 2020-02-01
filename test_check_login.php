@@ -19,8 +19,8 @@ ob_start();
 $_REQUEST['user'] = 'admin'; // mock request data, see LoginDecorator
 //$_REQUEST['user'] = 'guest'; // mock request data, see LoginDecorator
 
-$oControllerClass = LoginCheckController::class;
-$oController = new $oControllerClass();
+$sControllerClass = LoginCheckController::class;
+$oController = new $sControllerClass();
 $aDecorators = array_merge([
     ExceptionDecorator::class => [] // exception decorator use to catch global exception
 ], $oController->getDecorators());
