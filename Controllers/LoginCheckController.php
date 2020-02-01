@@ -11,7 +11,7 @@ use App\Decorators\LoginDecorator;
  * Class LoginCheckController
  * @package App\Controllers
  */
-class LoginCheckController extends BaseController
+class LoginCheckController extends Controller
 {
     public function getDecorators()
     {

@@ -1,7 +1,7 @@
 <?php
 namespace App\Decorators;
 
-use App\Common\BaseAction;
+use App\Common\Action;
 use App\Common\Errno;
 use App\Common\Request;
 use App\Common\Response;
@@ -12,11 +12,11 @@ use App\Common\Response;
  * Class SignDecorator
  * @package App\Decorators
  */
-class SignDecorator extends BaseDecorator
+class SignDecorator extends Decorator
 {
     private $action;
 
-    public function __construct(BaseAction $action)
+    public function __construct(Action $action)
     {
         $this->action = $action;
     }

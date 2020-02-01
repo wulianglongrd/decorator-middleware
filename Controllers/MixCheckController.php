@@ -12,7 +12,7 @@ use App\Decorators\SignDecorator;
  * Class MixCheckController
  * @package App\Controllers
  */
-class MixCheckController extends BaseController
+class MixCheckController extends Controller
 {
     public function getDecorators()
     {

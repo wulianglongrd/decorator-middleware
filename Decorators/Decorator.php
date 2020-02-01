@@ -1,9 +1,9 @@
 <?php
 namespace App\Decorators;
 
-use App\Common\BaseAction;
+use App\Common\Action;
 
-abstract class BaseDecorator extends BaseAction
+abstract class Decorator implements Action
 {
     /**
      * decorator param

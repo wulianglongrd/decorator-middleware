@@ -1,9 +1,9 @@
 <?php
 namespace App\Controllers;
 
-use App\Common\BaseAction;
+use App\Common\Action;
 
-abstract class BaseController extends BaseAction
+abstract class Controller implements Action
 {
     public function getDecorators()
     {
