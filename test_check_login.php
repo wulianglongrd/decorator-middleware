@@ -22,7 +22,7 @@ $_REQUEST['user'] = 'admin'; // mock request data, see LoginDecorator
 $sControllerClass = LoginCheckController::class;
 $oController = new $sControllerClass();
 $aDecorators = array_merge([
-    ExceptionDecorator::class => [] // exception decorator use to catch global exception
+    ExceptionDecorator::class => [] // exception decorator is used to catch global exception
 ], $oController->getDecorators());
 $aDecorators = array_reverse($aDecorators);
 
