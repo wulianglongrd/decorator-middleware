@@ -23,7 +23,10 @@ class SignDecorator extends Decorator
 
     function execute(Request $request, Response $response)
     {
-        echo "LoginDecorator start...\n";
+        echo "SignDecorator start...\n";
+        echo "SignDecorator param: \n";
+        print_r($this->getDecoratorParam());
+
         $this->checkSign($request);
 
         echo "check Sign PASS...\n";

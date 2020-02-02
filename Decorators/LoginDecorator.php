@@ -24,6 +24,9 @@ class LoginDecorator extends Decorator
     function execute(Request $request, Response $response)
     {
         echo "LoginDecorator start...\n";
+        echo "LoginDecorator param: \n";
+        print_r($this->getDecoratorParam());
+
         $this->checkLogin($request, $response);
 
         echo "check Login PASS...\n";
