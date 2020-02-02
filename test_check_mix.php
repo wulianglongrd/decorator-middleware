@@ -26,8 +26,7 @@ $_REQUEST['sign'] = 'PASS'; // see SignDecorator
 //$_REQUEST['sign'] = 'SIGN_ERROR'; // see SignDecorator
 
 
-$sControllerClass = MixCheckController::class;
-$oController = new $sControllerClass();
+$oController = new MixCheckController();
 $aDecorators = array_merge([
     ExceptionDecorator::class => [] // exception decorator is used to catch global exception
 ], $oController->getDecorators());
